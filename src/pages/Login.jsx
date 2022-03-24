@@ -6,7 +6,6 @@ import * as styles from "./css/Login.module.css";
 function Login() {
   const setCurrentUser = useStore((state) => state.setCurrentUser);
   const onSuccess = (res) => {
-    console.log(res);
     let profile = res.profileObj;
     profile.tokens = 0;
     setCurrentUser(profile);
