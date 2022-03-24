@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+}
+
+.box,
+.boxSelected {
+  padding: 0 1vw;
+  cursor: pointer;
+}
+
+.box:hover {
+  border-bottom: 1px solid var(--clr-dark);
+}
+
+.boxSelected:hover {
+  border-bottom: 1px solid var(--clr-main);
+}
+
+.link {
+  font-weight: bold;
+  color: var(--txt-dark);
+}
+
+.linkSelected {
+  color: var(--txt-main);
+}

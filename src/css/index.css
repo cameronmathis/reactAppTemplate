@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Properties */
+:root {
+  --ff-primary: "Workhorse", sans-serif;
+
+  --clr-constructive: #43b990;
+  --clr-constructive-hover: #3a9b79;
+  --clr-destructive: #e16259;
+  --clr-destructive-hover: #be534b;
+
+  --clr-background: #ffffff;
+  --clr-main: #3aa0da;
+  --clr-light: #bebebe;
+  --clr-medium: #5f5f5f;
+  --clr-dark: #111111;
+
+  --txt-main: #3aa0da;
+  --txt-light: #bebebe;
+  --txt-medium: #5f5f5f;
+  --txt-dark: #111111;
+}

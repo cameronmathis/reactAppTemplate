@@ -1,8 +1,12 @@
-[![license](https://img.shields.io/github/license/cameronmathis/RepoTemplate)](LICENSE)
-[![CodeQL](https://github.com/cameronmathis/RepoTemplate/actions/workflows/codeql-analysis.yaml/badge.svg)](https://github.com/cameronmathis/RepoTemplate/actions/workflows/codeql-analysis.yaml)
-[![CodeFactor](https://www.codefactor.io/repository/github/cameronmathis/RepoTemplate/badge)](https://www.codefactor.io/repository/github/cameronmathis/RepoTemplate)
+### [View Online](http://cameronmathis.github.io/ReactAppTemplate)
 
-# Repo Template
+[![license](https://img.shields.io/github/license/cameronmathis/ReactAppTemplate)](LICENSE)
+[![CodeQL](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml/badge.svg)](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml)
+[![CodeFactor](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate/badge)](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate)
+
+# React App Template
+
+This is a React App Template Repository.
 
 ## Table of contents
 
@@ -14,20 +18,45 @@
 
 ## General info
 
-This is a template I created to easily spin up new GitHub Repositories.
+This is a React App Template Repository in order to save time when creating new React Applications.
 
 ## Setup
 
-In order to use this...
+In order to view, visit [this think](http://cameronmathis.github.io/ReactAppTemplate).
 
 ## Software details
 
-Language:
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run deploy`
+
+Builds the app for production to the `build` folder.\
+
+Deploys the app to GitHub Pages.\
+The app is live! Open [http://cameronmathis.github.io/reactAppTemplate](http://cameronmathis.github.io/ReactAppTemplate) to view it in any browser.
 
 ## Status
 
-Version: </br>
-Project is: _in progress_
+Version: 1.0.0 <br/>
+Project is: _finished_
 
 ## Contact
 

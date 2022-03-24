@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  -webkit-box-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  border-bottom: 1px solid var(--clr-dark);
+  padding: 5px;
+}
+
+.title {
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--txt-main);
+}
+
+.spacer {
+  border-left: 2px solid var(--clr-main);
+  height: 4vh;
+  margin: 0 15px;
+}
+
+.left,
+.right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.left {
+  float: left;
+  justify-content: left;
+}
+
+.right {
+  float: right;
+  justify-content: right;
+}
