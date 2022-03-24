@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import {
   Navigate,
   Route,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
 } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
