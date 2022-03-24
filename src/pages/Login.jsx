@@ -6,6 +6,7 @@ import * as styles from "./css/Login.module.css";
 function Login() {
   const setCurrentUser = useStore((state) => state.setCurrentUser);
   const onSuccess = (res) => {
+    console.log(res);
     let profile = res.profileObj;
     profile.tokens = 0;
     setCurrentUser(profile);
@@ -15,7 +16,7 @@ function Login() {
     <div className={styles.container}>
       <GoogleLogin
         className={styles.button}
-        clientId="362995526144-7f6nu431qe0khuodrgntco6opohmonp6.apps.googleusercontent.com"
+        clientId="742956772598-2fcg5pvi80osim0oqgnq6lvueu9s24dm.apps.googleusercontent.com"
         buttonText="Login"
         onSuccess={onSuccess}
         cookiePolicy={"single_host_origin"}

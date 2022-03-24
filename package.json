@@ -1,7 +1,7 @@
 {
   "name": "react-app-template",
   "version": "0.1.0",
-  "homepage": "http://cameronmathis.github.io/ReactAppTemplate",
+  "homepage": "https://cameronmathis.github.io/ReactAppTemplate/",
   "private": true,
   "scripts": {
     "start": "vite",
