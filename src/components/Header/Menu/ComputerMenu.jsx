@@ -5,7 +5,7 @@ import useStore from "../../../Store";
 import * as styles from "./css/ComputerMenu.module.css";
 
 const ComputerMenu = ({ menuItems, getRandomKey, handleClick }) => {
-  const currentPage = useStore((state) => state.currentPage);
+  const currentPath = useStore((state) => state.currentPath);
 
   return (
     <div className={styles.menu}>
@@ -13,7 +13,7 @@ const ComputerMenu = ({ menuItems, getRandomKey, handleClick }) => {
         return (
           <Box
             className={
-              currentPage === item.path ? styles.boxSelected : styles.box
+              currentPath === item.path ? styles.boxSelected : styles.box
             }
             key={getRandomKey(item.text)}
             onClick={() => handleClick(item)}
@@ -21,7 +21,7 @@ const ComputerMenu = ({ menuItems, getRandomKey, handleClick }) => {
             <Typography
               variant="inherit"
               className={
-                currentPage === item.path ? styles.linkSelected : styles.link
+                currentPath === item.path ? styles.linkSelected : styles.link
               }
             >
               <h3>{item.text}</h3>

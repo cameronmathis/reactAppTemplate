@@ -6,7 +6,7 @@ import useStore from "../../../Store";
 import * as styles from "./css/MobileMenu.module.css";
 
 const MobileMenu = ({ menuItems, getRandomKey, handleClick }) => {
-  const currentPage = useStore((state) => state.currentPage);
+  const currentPath = useStore((state) => state.currentPath);
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpand = () => {
@@ -35,7 +35,7 @@ const MobileMenu = ({ menuItems, getRandomKey, handleClick }) => {
             return (
               <Box
                 className={
-                  currentPage === item.path ? styles.boxSelected : styles.box
+                  currentPath === item.path ? styles.boxSelected : styles.box
                 }
                 key={getRandomKey(item.text)}
                 onClick={() => handleMobileClick(item)}
@@ -43,7 +43,7 @@ const MobileMenu = ({ menuItems, getRandomKey, handleClick }) => {
                 <Typography
                   variant="inherit"
                   className={
-                    currentPage === item.path
+                    currentPath === item.path
                       ? styles.linkSelected
                       : styles.link
                   }

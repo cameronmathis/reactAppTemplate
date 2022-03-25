@@ -7,8 +7,8 @@ import ComputerMenu from "./ComputerMenu";
 import MobileMenu from "./MobileMenu";
 
 const Menu = () => {
-  const currentPage = useStore((state) => state.currentPage);
-  const setCurrentPage = useStore((state) => state.setCurrentPage);
+  const currentPath = useStore((state) => state.currentPath);
+  const setCurrentPath = useStore((state) => state.setCurrentPath);
   const isMobile = useStore((state) => state.isMobile);
   const navigate = useNavigate();
 
@@ -17,9 +17,9 @@ const Menu = () => {
   };
 
   const handleClick = (item) => {
-    if (currentPage !== item.path) {
+    if (currentPath !== item.path) {
       navigate(item.path);
-      setCurrentPage(item.path);
+      setCurrentPath(item.path);
     }
   };
 

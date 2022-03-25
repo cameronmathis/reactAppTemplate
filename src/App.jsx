@@ -1,22 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
-import {
-  Navigate,
-  Route,
-  HashRouter as Router,
-  Routes,
-} from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
+
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import { HOME } from "./constants/Pages";
+import Routes from "./components/Routes";
 import * as styles from "./css/App.module.css";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import PageNotFound from "./pages/PageNotFound";
 import useStore from "./Store";
 
 function App() {
-  const currentUser = useStore((state) => state.currentUser);
   const setIsMobile = useStore((state) => state.setIsMobile);
 
   useEffect(() => {
@@ -29,17 +21,7 @@ function App() {
     <div className={styles.body}>
       <Router>
         <Header />
-        {currentUser ? (
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path={HOME} element={<Navigate to="/" />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        ) : (
-          <Routes>
-            <Route path="*" element={<Login />} />
-          </Routes>
-        )}
+        <Routes />
         <Footer />
       </Router>
     </div>

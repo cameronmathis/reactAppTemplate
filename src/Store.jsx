@@ -1,13 +1,11 @@
 import create from "zustand";
 
-import { HOME } from "./constants/Pages";
-
 const useStore = create((set) => ({
   currentUser: null,
   setCurrentUser: (user) => set(() => ({ currentUser: user })),
 
-  currentPage: HOME,
-  setCurrentPage: (page) => set(() => ({ currentPage: page })),
+  currentPath: "/home",
+  setCurrentPath: (path) => set(() => ({ currentPath: path })),
 
   isMobile: null,
   setIsMobile: (bool) => set(() => ({ isMobile: bool })),
