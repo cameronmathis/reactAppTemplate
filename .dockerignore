@@ -1,0 +1,17 @@
+.git
+.cache
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules
+.env
+coverage
+coverage.json
+typechain
+.vscode/
+# ignore all markdown files (md) beside all README*.md other than README-secret.md
+*.md
+!README*.md
+README-secret.md
