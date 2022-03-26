@@ -1,4 +1,6 @@
 [![license](https://img.shields.io/github/license/cameronmathis/ReactAppTemplate)](LICENSE)
+[![React Build](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/react-build.yaml/badge.svg)](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/react-build.yaml)
+[![CI/CD](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/ci-cd.yaml/badge.svg)](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/ci-cd.yaml)
 [![CodeQL](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml/badge.svg)](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml)
 [![CodeFactor](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate/badge)](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate)
 
