@@ -10,6 +10,7 @@ node_modules
 coverage
 coverage.json
 typechain
+.github
 .vscode/
 # ignore all markdown files (md) beside all README*.md other than README-secret.md
 *.md
