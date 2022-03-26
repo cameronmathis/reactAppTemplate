@@ -10,3 +10,14 @@ Creates a docker dev image and names it "react-app-template:dev".
 
 Starts a container from the "react-app-template:dev" image.
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+
+## Prod
+
+`docker build -f docker/Dockerfile.prod -t react-app-template:prod .`
+
+Creates a docker prod image and names it "react-app-template:prod".
+
+`docker run -d --rm -p 8080:8080 react-app-template:prod`
+
+Starts a container from the "react-app-template:prod" image.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
