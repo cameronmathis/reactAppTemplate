@@ -8,6 +8,9 @@ name: Create and publish a Docker prod image
 on:
   push:
     branches: [production]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [production]
 
 env:
   REGISTRY: ghcr.io
