@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Create and publish a Docker dev image
+name: Create and publish a Docker prod image
 
 on:
   push:
