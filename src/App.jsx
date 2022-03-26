@@ -2,9 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { HashRouter as Router } from "react-router-dom";
 
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Routes from "./components/Routes";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import * as styles from "./css/App.module.css";
 import useStore from "./Store";
 
@@ -21,7 +21,7 @@ function App() {
     <div className={styles.body}>
       <Router>
         <Header />
-        <Routes />
+        <Body />
         <Footer />
       </Router>
     </div>

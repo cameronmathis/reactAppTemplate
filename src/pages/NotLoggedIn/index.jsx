@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as styles from "./css/NotLoggedIn.module.css";
+import * as styles from "./css/index.module.css";
 
 function NotLoggedIn() {
   return (

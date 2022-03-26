@@ -10,6 +10,6 @@
 
 .item,
 .item:hover {
-  color: var(--clr-main);
+  color: var(--clr-primary);
   padding: 0 1vw;
 }

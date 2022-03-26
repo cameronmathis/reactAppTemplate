@@ -1,7 +1,8 @@
+import PageNotFound from "../pages/PageNotFound";
+
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import NotLoggedIn from "../pages/NotLoggedIn";
-import PageNotFound from "../pages/PageNotFound";
 
 export const HOME = {
   path: "/home",

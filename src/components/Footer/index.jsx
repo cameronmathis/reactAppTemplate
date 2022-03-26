@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FOOTER_ITEMS } from "../../constants/FooterItems";
-import * as styles from "./css/Footer.module.css";
+import * as styles from "./css/index.module.css";
 
 const Footer = () => {
   return (

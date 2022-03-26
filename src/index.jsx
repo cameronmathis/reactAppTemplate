@@ -1,4 +1,4 @@
-import { StylesProvider } from "@mui/styles";
+import { StyledEngineProvider } from "@mui/material";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -8,9 +8,9 @@ import reportWebVitals from "./reportWebVitals";
 import "./css/index.css";
 
 ReactDOM.render(
-  <StylesProvider injectFirst>
+  <StyledEngineProvider injectFirst>
     <App />
-  </StylesProvider>,
+  </StyledEngineProvider>,
   document.getElementById("root")
 );
 

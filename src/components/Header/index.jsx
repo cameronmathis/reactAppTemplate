@@ -1,6 +1,7 @@
 import React from "react";
-import * as styles from "./css/Header.module.css";
-import Menu from "./Menu/Menu";
+
+import * as styles from "./css/index.module.css";
+import Menu from "./Menu";
 
 const Header = () => {
   return (

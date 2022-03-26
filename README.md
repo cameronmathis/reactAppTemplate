@@ -1,5 +1,3 @@
-### [View Online](http://cameronmathis.github.io/ReactAppTemplate)
-
 [![license](https://img.shields.io/github/license/cameronmathis/ReactAppTemplate)](LICENSE)
 [![CodeQL](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml/badge.svg)](https://github.com/cameronmathis/ReactAppTemplate/actions/workflows/codeql-analysis.yaml)
 [![CodeFactor](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate/badge)](https://www.codefactor.io/repository/github/cameronmathis/ReactAppTemplate)

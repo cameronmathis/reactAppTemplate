@@ -13,7 +13,7 @@
 }
 
 .boxSelected:hover {
-  border-bottom: 1px solid var(--clr-main);
+  border-bottom: 1px solid var(--clr-primary);
 }
 
 .link {
@@ -22,5 +22,5 @@
 }
 
 .linkSelected {
-  color: var(--txt-main);
+  color: var(--txt-primary);
 }

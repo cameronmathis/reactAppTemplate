@@ -12,11 +12,11 @@
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
-  color: var(--txt-main);
+  color: var(--txt-primary);
 }
 
 .spacer {
-  border-left: 2px solid var(--clr-main);
+  border-left: 2px solid var(--clr-primary);
   height: 4vh;
   margin: 0 15px;
 }

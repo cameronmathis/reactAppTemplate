@@ -1,17 +1,17 @@
 import React from "react";
-import { Navigate, Routes as ReactRoutes, Route } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
+import { PAGES } from "../constants/Pages";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import PageNotFound from "../pages/PageNotFound";
 import useStore from "../Store";
-import { PAGES } from "../constants/Pages";
 
-function Routes() {
+function Body() {
   const currentUser = useStore((state) => state.currentUser);
 
   return (
-    <ReactRoutes>
+    <Routes>
       {!currentUser ? (
         <>
           <Route path={"/"} element={<Login />} />
@@ -28,8 +28,8 @@ function Routes() {
         </>
       )}
       <Route path="*" element={<PageNotFound />} />
-    </ReactRoutes>
+    </Routes>
   );
 }
 
-export default Routes;
+export default Body;
