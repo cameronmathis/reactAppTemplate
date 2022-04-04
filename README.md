@@ -28,7 +28,7 @@ In order to view, visit [this think](http://cameronmathis.github.io/ReactAppTemp
 
 In the project directory, you can run:
 
-### `npm run dev`
+### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost/ReactAppTemplate/](http://localhost/ReactAppTemplate/) to view it in the browser.
