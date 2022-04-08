@@ -20,10 +20,8 @@ const MobileMenu = ({ menuItems, getRandomKey, handleClick }) => {
 
   return (
     <div className={styles.menu}>
-      <Button className={styles.menuIcon} onClick={handleExpand}>
-        <MenuIcon
-          className={isExpanded ? styles.expandedIcon : styles.closedIcon}
-        />
+      <Button className={styles.menuButton} onClick={handleExpand}>
+        <MenuIcon className={styles.menuIcon} />
       </Button>
       <Drawer
         anchor={"right"}
@@ -54,7 +52,6 @@ const MobileMenu = ({ menuItems, getRandomKey, handleClick }) => {
             );
           })}
         </Paper>
-      </Drawer>
     </div>
   );
 };

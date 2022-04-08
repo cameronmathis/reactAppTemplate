@@ -1,0 +1,21 @@
+.snackbar {
+  position: absolute;
+  top: 8vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.snackbar > div {
+  display: flex;
+  align-content: center;
+  background-color: rgba(150, 150, 150, 0.9);
+  border: 2px solid var(--clr-dark);
+  width: 200px;
+  height: 10vh;
+  max-height: 45px;
+}
+
+.snackbar > div > div {
+  color: var(--clr-dark);
+  font-size: large;
+}
