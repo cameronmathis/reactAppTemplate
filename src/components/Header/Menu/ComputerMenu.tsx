@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+
 import { MenuItem } from "../../../constants/MenuItems";
 
 const MenuButtonBoxStyle = {
@@ -31,14 +32,14 @@ function MenuButton({
           sx={{
             ...MenuButtonBoxStyle,
             "&:hover": {
-              borderColor: "secondary.main",
+              borderColor: "primary.light",
             },
           }}
           onClick={() => handleClick(item)}
         >
           <Typography
             sx={MenuButtonTypographyStyle}
-            color="secondary"
+            color="primary.light"
             noWrap
             variant="h5"
           >

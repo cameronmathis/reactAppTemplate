@@ -1,6 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, Drawer, IconButton, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
+
 import { MenuItem } from "../../../constants/MenuItems";
 
 function MenuButton({
@@ -20,7 +21,7 @@ function MenuButton({
       onClick={() => handleClick(item)}
     >
       {isActive ? (
-        <Typography color="secondary" noWrap variant="h5">
+        <Typography color="primary.light" noWrap variant="h5">
           {item.text}
         </Typography>
       ) : (
