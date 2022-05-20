@@ -19,10 +19,10 @@ jobs:
           node-version: 14.x
 
       - name: Install NPM packages
-        run: npm ci
+        run: npm i --legacy-peer-deps
 
       - name: Build project
-        run: CI=false npm run build
+        run: npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2

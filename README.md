@@ -28,6 +28,10 @@ In order to view, visit [this think](http://cameronmathis.github.io/ReactAppTemp
 
 In the project directory, you can run:
 
+### `npm install --legacy-peer-deps`
+
+Install all the required dependencies to run the application.
+
 ### `npm run start`
 
 Runs the app in the development mode.\
