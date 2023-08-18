@@ -1,9 +1,9 @@
 import PageNotFound from "../pages/PageNotFound";
 
+import React, { ReactElement } from "react";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import NotLoggedIn from "../pages/NotLoggedIn";
-import { ReactElement } from "react";
 
 export interface Page {
   path: string;

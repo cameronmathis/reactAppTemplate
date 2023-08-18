@@ -1,10 +1,10 @@
 import { Snackbar } from "@mui/material";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import SnackbarService from "../services/SnackbarService";
 
 const SnackbarRoot = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const [rootContent, setRootContent] = useState({ content: null });
+  const [rootContent, setRootContent] = useState({ content: <></> });
 
   useEffect(() => {
     SnackbarService.on("openSnackbar", ({ content }) => {
@@ -12,7 +12,7 @@ const SnackbarRoot = () => {
       setOpen(true);
     });
     SnackbarService.on("closeSnackbar", () => {
-      setRootContent({ content: null });
+      setRootContent({ content: <></> });
       setOpen(false);
     });
   }, []);
@@ -22,7 +22,7 @@ const SnackbarRoot = () => {
       return;
     }
 
-    setRootContent({ content: null });
+    setRootContent({ content: <></> });
     setOpen(false);
   };
 

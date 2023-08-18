@@ -16,7 +16,12 @@ const Footer = () => {
       }}
     >
       {FOOTER_ITEMS.map((item, key) => (
-        <IconButton color="primary" href={item.link} key={key}>
+        <IconButton
+          data-testid="icon-btn"
+          color="primary"
+          href={item.link}
+          key={key}
+        >
           {item.icon}
         </IconButton>
       ))}

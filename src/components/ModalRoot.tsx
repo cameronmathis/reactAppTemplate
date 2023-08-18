@@ -1,5 +1,5 @@
 import { Box, Modal } from "@mui/material";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import ModalService from "../services/ModalService";
 
