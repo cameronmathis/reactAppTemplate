@@ -1,15 +1,13 @@
-const ModalService = {
-  on(event, callback) {
+export function on(event, callback) {
     document.addEventListener(event, (e) => callback(e.detail));
-  },
-  openModal(content) {
-    document.dispatchEvent(
-      new CustomEvent("openModal", { detail: { content } })
-    );
-  },
-  closeModal() {
-    document.dispatchEvent(new CustomEvent("closeModal"));
-  },
-};
+}
 
-export default ModalService;
+export function openModal(content) {
+    document.dispatchEvent(
+        new CustomEvent('openModal', { detail: { content } })
+    );
+}
+
+export function closeModal() {
+    document.dispatchEvent(new CustomEvent('closeModal'));
+}

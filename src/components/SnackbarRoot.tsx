@@ -1,36 +1,35 @@
-import { Snackbar } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import SnackbarService from "../services/SnackbarService";
+import { Snackbar } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 
-const SnackbarRoot = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const [rootContent, setRootContent] = useState({ content: <></> });
+import * as SnackbarService from '../services/SnackbarService';
 
-  useEffect(() => {
-    SnackbarService.on("openSnackbar", ({ content }) => {
-      setRootContent({ content });
-      setOpen(true);
-    });
-    SnackbarService.on("closeSnackbar", () => {
-      setRootContent({ content: <></> });
-      setOpen(false);
-    });
-  }, []);
+export function SnackbarRoot() {
+    const [open, setOpen] = useState<boolean>(false);
+    const [rootContent, setRootContent] = useState({ content: <></> });
 
-  const handleClose = (_event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
+    useEffect(() => {
+        SnackbarService.on('openSnackbar', ({ content }) => {
+            setRootContent({ content });
+            setOpen(true);
+        });
+        SnackbarService.on('closeSnackbar', () => {
+            setRootContent({ content: <></> });
+            setOpen(false);
+        });
+    }, []);
 
-    setRootContent({ content: <></> });
-    setOpen(false);
-  };
+    const handleClose = (_event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
 
-  return (
-    <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
-      {rootContent.content}
-    </Snackbar>
-  );
-};
+        setRootContent({ content: <></> });
+        setOpen(false);
+    };
 
-export default SnackbarRoot;
+    return (
+        <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
+            {rootContent.content}
+        </Snackbar>
+    );
+}

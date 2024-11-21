@@ -1,25 +1,26 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Box } from '@mui/material';
+import React, { ReactElement } from 'react';
 
-import ModalRoot from "../components/ModalRoot";
-import SnackbarRoot from "../components/SnackbarRoot";
+import { ModalRoot } from '../components/ModalRoot';
+import { SnackbarRoot } from '../components/SnackbarRoot';
 
-function Page({ children }) {
-  return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {children}
-      <SnackbarRoot />
-      <ModalRoot />
-    </Box>
-  );
+export interface PageProps {
+    children?: ReactElement;
 }
 
-export default Page;
+export function Page({ children }: PageProps) {
+    return (
+        <Box
+            sx={{
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
+            {children}
+            <SnackbarRoot />
+            <ModalRoot />
+        </Box>
+    );
+}

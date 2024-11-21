@@ -1,10 +1,10 @@
-import React from "react";
-import InfoPage from "../components/InfoPage";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-function Home() {
-  return (
-    <InfoPage title="Home" text="Sorry, this page is under construction." />
-  );
+import { InfoPage } from '../components/InfoPage';
+
+export function Home() {
+    const { t } = useTranslation('home');
+
+    return <InfoPage title={t('title')} text={t('text')} />;
 }
-
-export default Home;

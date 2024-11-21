@@ -1,30 +1,20 @@
-import { ThemeProvider } from "@mui/material";
-import React, { useEffect } from "react";
-import { HashRouter as Router } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Routes from "./components/Routes";
-import useStore from "./Store";
-import theme from "./Theme";
+import { ThemeProvider } from '@mui/material';
+import React from 'react';
+import { HashRouter as Router } from 'react-router-dom';
 
-function App() {
-  const setIsMobile = useStore((state) => state.setIsMobile);
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { Routes } from './components/Routes';
+import theme from './Theme';
 
-  useEffect(() => {
-    window.addEventListener("resize", () =>
-      setIsMobile(window.innerWidth < 765)
+export function App() {
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Header />
+                <Routes />
+                <Footer />
+            </Router>
+        </ThemeProvider>
     );
-  }, [setIsMobile]);
-
-  return (
-    <ThemeProvider theme={theme}>
-      <Router>
-        <Header />
-        <Routes />
-        <Footer />
-      </Router>
-    </ThemeProvider>
-  );
 }
-
-export default App;

@@ -10,11 +10,11 @@ This is a React App Template Repository.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Setup](#setup)
-- [Software details](#Software-details)
-- [Status](#status)
-- [Contact](#contact)
+-   [General info](#general-info)
+-   [Setup](#setup)
+-   [Software details](#Software-details)
+-   [Status](#status)
+-   [Contact](#contact)
 
 ## General info
 
@@ -28,7 +28,7 @@ In order to view, visit [this think](http://cameronmathis.github.io/ReactAppTemp
 
 In the project directory, you can run:
 
-### `npm install --legacy-peer-deps`
+### `npm install`
 
 Install all the required dependencies to run the application.
 

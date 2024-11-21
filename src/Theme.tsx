@@ -1,23 +1,23 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
-const primaryMain = "#262730";
+const primaryMain = '#262730';
 
-const secondaryMain = "#77BA99";
+const secondaryMain = '#77BA99';
 
 const theme = createTheme({
-  palette: {
-    primary: {
-      main: primaryMain,
+    palette: {
+        primary: {
+            main: primaryMain,
+        },
+        secondary: {
+            main: secondaryMain,
+        },
     },
-    secondary: {
-      main: secondaryMain,
+    typography: {
+        allVariants: {
+            color: primaryMain,
+        },
     },
-  },
-  typography: {
-    allVariants: {
-      color: primaryMain,
-    },
-  },
 });
 
 export default theme;
