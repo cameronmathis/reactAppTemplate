@@ -22,7 +22,7 @@ This is a React App Template Repository in order to save time when creating new 
 
 ## Setup
 
-In order to view, visit [this think](http://cameronmathis.github.io/ReactAppTemplate).
+In order to view, visit [this link](http://cameronmathis.github.io/ReactAppTemplate).
 
 ## Software details
 
